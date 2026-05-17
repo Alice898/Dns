@@ -1,0 +1,212 @@
+#!name = 🍟 国内常用App DNS分流
+#!desc = 微信/QQ/抖音/头条/苹果/美团/高德/WPS/京东/支付宝/腾讯视频/爱奇艺/快手等常用App DNS分流
+#!author = Hermes Agent
+#!system = iOS,iPadOS,tvOS,macOS
+#!loon_version = 3.0.0(500)
+#!icon = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Server.png
+#!category = DNS
+
+[Host]
+# ===== DNS服务映射 =====
+dns.alidns.com = 223.5.5.5
+doh.pub = 1.12.12.12
+doh.360.cn = 23.6.48.18
+dns.alidns.com = 223.5.5.5
+
+# ===== 微信/QQ ===== (腾讯DNS 1.12.12.12)
+*.weixin.qq.com = server:1.12.12.12
+*.wx.qq.com = server:1.12.12.12
+*.weixin.com = server:1.12.12.12
+*.wechat.com = server:1.12.12.12
+*.servicewechat.com = server:1.12.12.12
+*.weixinbridge.com = server:1.12.12.12
+*.qq.com = server:1.12.12.12
+*.qpic.cn = server:1.12.12.12
+*.qlogo.cn = server:1.12.12.12
+*.gtimg.cn = server:1.12.12.12
+*.idqqimg.com = server:1.12.12.12
+*.weiyun.com = server:1.12.12.12
+*.smtcdns.com = server:1.12.12.12
+*.smtcdns.net = server:1.12.12.12
+url.cn = server:1.12.12.12
+
+# ===== 腾讯视频 ===== (腾讯DNS 1.12.12.12)
+*.v.qq.com = server:1.12.12.12
+*.video.qq.com = server:1.12.12.12
+*.livepush.myqcloud.com = server:1.12.12.12
+*.wvp.myqcloud.com = server:1.12.12.12
+*.wetv.com = server:1.12.12.12
+
+# ===== 腾讯管家 ===== (腾讯DNS 1.12.12.12)
+*.qqpush.com = server:1.12.12.12
+*.sec.qq.com = server:1.12.12.12
+*.url.cn = server:1.12.12.12
+*.mp.qq.com = server:1.12.12.12
+
+# ===== 抖音/今日头条 ===== (字节DNS 180.184.1.1)
+*.douyin.com = server:180.184.1.1
+*.douyinpic.com = server:180.184.1.1
+*.douyinstatic.com = server:180.184.1.1
+*.douyinvod.com = server:180.184.1.1
+*.iesdouyin.com = server:180.184.1.1
+*.ibytedapm.com = server:180.184.1.1
+*.toutiao.com = server:180.184.1.1
+*.toutiao13.com = server:180.184.1.1
+*.snssdk.com = server:180.184.1.1
+*.pstatp.com = server:180.184.1.1
+*.byteimg.com = server:180.184.1.1
+*.bytedance.com = server:180.184.1.1
+*.bytedns.net = server:180.184.1.1
+*.bytednsdoc.com = server:180.184.1.1
+*.bytetos.com = server:180.184.1.1
+*.zijieapi.com = server:180.184.1.1
+*.zijieimg.com = server:180.184.1.1
+*.zjbyte.com = server:180.184.1.1
+*.zjcdn.com = server:180.184.1.1
+*.amemv.com = server:180.184.1.1
+*.bytegoofy.com = server:180.184.1.1
+
+# ===== 红果短剧 ===== (字节DNS 180.184.1.1)
+*.byted-static.com = server:180.184.1.1
+*.ixigua.com = server:180.184.1.1
+*.wukong.com = server:180.184.1.1
+*.feiliao.com = server:180.184.1.1
+*.feelgood.cn = server:180.184.1.1
+
+# ===== 快手 ===== (腾讯DNS 119.29.29.29)
+*.kuaishou.com = server:119.29.29.29
+*.kspkg.com = server:119.29.29.29
+*.gifshow.com = server:119.29.29.29
+*.ksurl.cn = server:119.29.29.29
+*.kuaishoupay.com = server:119.29.29.29
+
+# ===== 支付宝 ===== (阿里DNS 223.5.5.5)
+*.alipay.com = server:223.5.5.5
+*.alipay.com.cn = server:223.5.5.5
+*.alipaydns.com = server:223.5.5.5
+*.alipaylog.com = server:223.5.5.5
+*.alipayobjects.com = server:223.5.5.5
+*.alipay-eco.com = server:223.5.5.5
+*.antgroup.com = server:223.5.5.5
+*.antfin.com = server:223.5.5.5
+*.alipayeshop.com = server:223.5.5.5
+
+# ===== 淘宝/天猫 ===== (阿里DNS 223.5.5.5)
+*.taobao.com = server:223.5.5.5
+*.tmall.com = server:223.5.5.5
+*.tbcache.com = server:223.5.5.5
+*.alicdn.com = server:223.5.5.5
+*.alibabausercontent.com = server:223.5.5.5
+*.1688.com = server:223.5.5.5
+*.alibaba.com = server:223.5.5.5
+*.alimama.com = server:223.5.5.5
+*.aliyun.com = server:223.5.5.5
+*.aliyuncs.com = server:223.5.5.5
+
+# ===== 京东 ===== (腾讯DNS 119.29.29.29)
+*.jd.com = server:119.29.29.29
+*.jdstatic.com = server:119.29.29.29
+*.jdpay.com = server:119.29.29.29
+*.jdcdn.com = server:119.29.29.29
+*.jdfw.com = server:119.29.29.29
+*.jiayoumall.com = server:119.29.29.29
+*.jdcache.com = server:119.29.29.29
+*.jdglobal.com = server:119.29.29.29
+*.jdpgs.com = server:119.29.29.29
+*.jiayou.com = server:119.29.29.29
+*.yihaojituan.com = server:119.29.29.29
+*.jddj.com = server:119.29.29.29
+*.jmall.com = server:119.29.29.29
+*.jddworld.com = server:119.29.29.29
+
+# ===== 美团 ===== (腾讯DNS 119.29.29.29)
+*.meituan.com = server:119.29.29.29
+*.dianping.com = server:119.29.29.29
+*.ele.me = server:119.29.29.29
+*.mobike.com = server:119.29.29.29
+*.meishi.ele.me = server:119.29.29.29
+*.hzmidea.com = server:119.29.29.29
+*.dianpingoa.com = server:119.29.29.29
+*.mtyun.com = server:119.29.29.29
+*.sankuai.com = server:119.29.29.29
+*.neixin.cn = server:119.29.29.29
+*.feiniu.com = server:119.29.29.29
+*.lizi.com = server:119.29.29.29
+
+# ===== 高德 ===== (腾讯DNS 119.29.29.29)
+*.amap.com = server:119.29.29.29
+*.autonavi.com = server:119.29.29.29
+*.gaode.com = server:119.29.29.29
+*.upai.com = server:119.29.29.29
+
+# ===== 百度贴吧 ===== (百度DNS 180.76.76.76)
+*.baidu.com = server:180.76.76.76
+*.bdstatic.com = server:180.76.76.76
+*.bdimg.com = server:180.76.76.76
+*.tieba.baidu.com = server:180.76.76.76
+
+# ===== WPS ===== (腾讯DNS 119.29.29.29)
+*.wps.com = server:119.29.29.29
+*.wps.cn = server:119.29.29.29
+*.kingsoft.com = server:119.29.29.29
+*.ksosoft.com = server:119.29.29.29
+
+# ===== 爱奇艺 ===== (腾讯DNS 119.29.29.29)
+*.iqiyi.com = server:119.29.29.29
+*.qiyi.com = server:119.29.29.29
+*.iqiyipic.com = server:119.29.29.29
+*.qiyipic.com = server:119.29.29.29
+*.pps.tv = server:119.29.29.29
+*.ppstream.com = server:119.29.29.29
+*.ppvod.net = server:119.29.29.29
+
+# ===== 微博 ===== (腾讯DNS 119.29.29.29)
+*.weibo.com = server:119.29.29.29
+*.sina.com.cn = server:119.29.29.29
+*.sinaimg.cn = server:119.29.29.29
+*.weibocdn.com = server:119.29.29.29
+*.sinajs.cn = server:119.29.29.29
+*.sina.com = server:119.29.29.29
+*.t.cn = server:119.29.29.29
+
+# ===== 彩云天气 ===== (腾讯DNS 119.29.29.29)
+*.caiyunapp.com = server:119.29.29.29
+*.cyapi.cn = server:119.29.29.29
+*.fogcloud.io = server:119.29.29.29
+
+# ===== 苹果服务 ===== (苹果DNS 17.253.144.10)
+*.apple.com = server:17.253.144.10
+*.icloud.com = server:17.253.144.10
+*.mzstatic.com = server:17.253.144.10
+
+# ===== 飞书 ===== (字节DNS 180.184.1.1)
+*.feishu.cn = server:180.184.1.1
+*.larksuite.com = server:180.184.1.1
+*.larksuite.cn = server:180.184.1.1
+*.bytexservice.com = server:180.184.1.1
+*.bytescm.com = server:180.184.1.1
+
+# ===== 拼多多 ===== (腾讯DNS 119.29.29.29)
+*.pinduoduo.com = server:119.29.29.29
+*.yangkeduo.com = server:119.29.29.29
+*.pddpic.com = server:119.29.29.29
+
+# ===== B站 ===== (B站DNS)
+*.bilibili.com = server:119.29.29.29
+*.biliapi.com = server:119.29.29.29
+*.bilivideo.com = server:119.29.29.29
+*.bilicdn.com = server:119.29.29.29
+upos-sz-mirrorcos.bilivideo.com = server:1.12.12.12
+
+# ===== 网易 ===== (腾讯DNS 119.29.29.29)
+*.163.com = server:119.29.29.29
+*.126.com = server:119.29.29.29
+*.youdao.com = server:119.29.29.29
+*.netease.com = server:119.29.29.29
+*.music.163.com = server:119.29.29.29
+
+# ===== 360 ===== (360 DoH IP 101.198.198.198)
+*.360.cn = server:101.198.198.198
+*.360.com = server:101.198.198.198
+*.360safe.com = server:101.198.198.198
+*.so.com = server:101.198.198.198
