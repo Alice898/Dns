@@ -544,6 +544,7 @@ upos-sz-upcdntx.bilivideo.com = server:https://doh.pub/dns-query
 *.he.net = server:https://ordns.he.net/dns-query
 # ===== 美团 ===== (腾讯DNS 119.29.29.29)
 *.meituan.com = server:119.29.29.29
+*.meituan.net = server:119.29.29.29
 *.dianping.com = server:119.29.29.29
 *.ele.me = server:119.29.29.29
 *.mobike.com = server:119.29.29.29
