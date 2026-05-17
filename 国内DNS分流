@@ -1,0 +1,9 @@
+#!name = 国内DNS分流
+#!desc = 国内域名分流，各平台域名用各自官方DNS解析，返回最优IP，个人使用，仅适配本人
+#!author = Alice
+#!system = iOS,iPadOS,tvOS,macOS
+#!loon_version = 3.0.0(500)
+#!icon = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Server.png
+#!category = DNS
+[Host]
+# ===== DNS服务映射 =====
